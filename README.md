@@ -1,7 +1,6 @@
-Projet-Machine-Learning : Librairie Python pour le Traitement de Données avec Pandas
+Projet-Machine-Learning : Librairie Python pour le Nettoyage de Données avec Pandas
 
-Cette librairie Python est conçue pour faciliter le traitement de données à l'aide de Pandas. Elle offre les fonctionnalités suivantes :
-Fonctionnalités principales :
+Nettoyage de données l'aide de Pandas. 
 
     Importation de données :
         Prend en charge les formats JSON, CSV, ou des dictionnaires Python en tant qu'input.
@@ -9,25 +8,36 @@ Fonctionnalités principales :
     Stockage dans des Dataframes :
         Permet de stocker les données dans des dataframes pour une manipulation aisée.
 
-    Traitement par Colonnes :
-        Facilite le traitement des données en fonction des colonnes.
 
-    Traitement par Lignes :
-        Offre des fonctionnalités pour le traitement des données par lignes.
+Fonctions utiles pour le nettoyage de données :
 
-    Sélection d'Échantillons :
-        Permet de sélectionner des échantillons spécifiques du dataframe.
+Charger un CSV vers un Dataframe :
 
-    Fragmentation par Critères :
-        Fragmentation des données en fonction de critères définis (contenu d'une colonne, etc.).
+    df = pd.read_csv("data.csv")
+    print(df)
+    => prend un fichier CSV en entrée
+    => créer un dataframe à partir des données CSV
 
-    Définition d'une Valeur par Défaut :
-        Possibilité de définir une valeur par défaut pour les données manquantes.
+Récupérer les infos du Dataframe (données vides, noms des colonnes, etc.) :
+    df.info()
+    => fonction qui s'applique à un dataframe
+    => renvoie les infos du dataframe
+    
+Sommer le nombre de valeurs nulles dans chaque colonne :
+    print(df.isnull().sum())
+    => prend un dataframe en entrée
+    => permet de compter le nombre d'éléments nuls dans chaque colonne
 
-    Assemblage de Dataframes :
-        Facilite l'assemblage de plusieurs dataframes.
+Vérifier s'il y a des données vides dans le Dataset :
+    print(df.isnull().values.any())
+    => renvoie True ou False
 
-    Exportation au Format CSV :
-        Permet d'exporter les dataframes sous le format CSV pour une utilisation ultérieure.
+Compte le nombre de valeurs manquantes totales :
+    print(df.isnull().sum().sum())
+    => renvoie un nombre
 
-Cette librairie vise à simplifier le processus de manipulation et de traitement de données, offrant ainsi une flexibilité accrue dans le cadre de projets de Machine Learning.
+Visualiser les données en doublons :
+    data.loc[data['nom_colonne'].duplicated(keep=False),:]
+    => prend un colonne en entrée
+    => renvoie les éléments doublons 
+    
