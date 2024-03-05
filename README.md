@@ -1,4 +1,6 @@
-Projet-Machine-Learning : Librairie Python pour le Traitement de Données avec Pandas
+Projet-Machine-Learning : 
+
+Librairie Python pour le Traitement de Données avec Pandas
 
 Cette librairie Python est conçue pour faciliter le traitement de données à l'aide de Pandas. Elle offre les fonctionnalités suivantes :
 Fonctionnalités principales :
@@ -31,3 +33,9 @@ Fonctionnalités principales :
         Permet d'exporter les dataframes sous le format CSV pour une utilisation ultérieure.
 
 Cette librairie vise à simplifier le processus de manipulation et de traitement de données, offrant ainsi une flexibilité accrue dans le cadre de projets de Machine Learning.
+
+Flask : Librairie Python permettant de déployer facilement une API REST
+
+    Paramétrage d'une API par création de chemins URL qui sont associés à des fonctions exécutant les scripts associés.
+    Permet notamment de traiter l'envoi et la réception de données au format JSON
+
