@@ -41,7 +41,7 @@ CREER ENVIRONNEMENT VIRTUEL
 python -m venv <nom> dans le terminal
 
 ACTIVER L ENVIRONNEMENT
-Source env/bin/activate
+Source <nom>/bin/activate
 
 GENERER LE FICHIER REQUIREMENTS
 pip freeze > requirements.txt
@@ -58,6 +58,3 @@ pour afficher le content
 DESACTIVER L ENVIRONNEMENT
 deactivate
 pour quitter le venv / switcher dans le cas où on est déjà dans un autre venv
-
-
-
