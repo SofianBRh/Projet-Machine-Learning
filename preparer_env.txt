@@ -1,4 +1,4 @@
-// WINDOWS //
+OUVRIR UN TERMINAL DANS LE DOSSIER PROJET 
 
 python -m venv --help
 pour voir la courte docu de venv
@@ -7,7 +7,8 @@ AFFICHER LA VERSION
 python --version
 
 
-OUVRIR UN TERMINAL DANS LE DOSSIER PROJET 
+
+// WINDOWS //
 
 CREER UN ENVIRONNEMENT
 python -m venv <NOM>
