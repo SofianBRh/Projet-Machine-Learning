@@ -17,15 +17,11 @@ ACTIVER L ENVIRONNEMENT
 Activer env
 env/Scripts/activate
 
-INSTALLER REQUESTS
-pip install requests
-pour installer requests
-
 GENERER LE FICHIER REQUIREMENTS
 pip freeze > requirements.txt
 pour créer la liste des requis
 
-INSTALLER LES LIBRAIRIES DE REQUIREMENTS
+INSTALLER LE FICHIER REQUIREMENTS
 pip install -r requirements.txt
 pour installer le contenu de requirements.txt
 
@@ -47,15 +43,11 @@ python -m venv <nom> dans le terminal
 ACTIVER L ENVIRONNEMENT
 Source env/bin/activate
 
-INSTALLER REQUESTS
-pip install requests
-pour installer requests
-
 GENERER LE FICHIER REQUIREMENTS
 pip freeze > requirements.txt
 pour créer la liste des requis
 
-INSTALLER LES LIBRAIRIES DE REQUIREMENTS
+INSTALLER LE FICHIER REQUIREMENTS
 pip install -r requirements.txt
 pour installer le contenu de requirements.txt
 
